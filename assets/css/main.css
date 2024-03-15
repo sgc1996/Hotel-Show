@@ -1327,13 +1327,13 @@ section {
     padding: 40px 0;
   }
 
-  .gallery .swiper-slide-active {
+  /* .gallery .swiper-slide-active {
     border: 6px solid var(--color-primary);
     padding: 4px;
     background: #fff;
     z-index: 1;
     transform: scale(1.2);
-  }
+  } */
 }
 
 /*--------------------------------------------------------------
