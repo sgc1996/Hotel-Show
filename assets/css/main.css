@@ -1812,27 +1812,22 @@ section {
 .video-view {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .video-box {
   margin: 0 5px 0 5px;
+  width: 300px;
 }
 
-@media screen and (max-width: 768px) {
-  .about .play-btn {
-    width: 54px;
-    height: 54px;
-    left: calc(65% - 47px);
-    top: calc(70% - 47px);
-  }
-
-  .about .play-btn:before {
-    width: 68px;
-    height: 68px;
+@media screen and (max-width: 1520px) {
+  .video-box {
+    margin: 0 5px 0 5px;
+    width: 250px;
   }
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .about .play-btn {
     width: 34px;
     height: 34px;
@@ -1850,7 +1845,7 @@ section {
     border-bottom: 4px solid transparent;
     border-left: 8px solid #fff;
   }
-}
+} */
 
 .fa-4x {
   font-size: 4em;
