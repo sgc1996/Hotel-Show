@@ -336,7 +336,7 @@
             <div class="swiper-slide"><img src="assets/img/sponsors/e-15.jpg" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/sponsors/e-16.jpg" class="img-fluid" alt=""></div>
           </div>
-
+          
         <div class="section-header"  style="padding-bottom: 0px; margin-top: 30px;">
           <p>SPONSORED BY</span></p>
         </div>
@@ -397,59 +397,59 @@
       </div>
     </section><!-- End Stats Counter Section -->
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="why-box">
-              <h3>Why Choose Yummy?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-              </p>
-              <div class="text-center">
-                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Why Box -->
-
-          <div class="col-lg-8 d-flex align-items-center">
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us section-bg">
+          <div class="container" data-aos="fade-up">
+    
             <div class="row gy-4">
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4>Corporis voluptates officia eiusmod</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+    
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="why-box">
+                  <h3>Why Choose Yummy?</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                    Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                  </p>
+                  <div class="text-center">
+                    <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                  </div>
                 </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-gem"></i>
-                  <h4>Ullamco laboris ladore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div><!-- End Why Box -->
+    
+              <div class="col-lg-8 d-flex align-items-center">
+                <div class="row gy-4">
+    
+                  <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                      <i class="bi bi-clipboard-data"></i>
+                      <h4>Corporis voluptates officia eiusmod</h4>
+                      <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    </div>
+                  </div><!-- End Icon Box -->
+    
+                  <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                      <i class="bi bi-gem"></i>
+                      <h4>Ullamco laboris ladore pan</h4>
+                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    </div>
+                  </div><!-- End Icon Box -->
+    
+                  <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                      <i class="bi bi-inboxes"></i>
+                      <h4>Labore consequatur incidid dolore</h4>
+                      <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    </div>
+                  </div><!-- End Icon Box -->
+    
                 </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-              </div><!-- End Icon Box -->
-
+              </div>
+    
             </div>
+    
           </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
+        </section><!-- End Why Us Section -->
 
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu">
@@ -1372,39 +1372,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script>
-   var target_date = new Date("July 26, 2024").getTime(); // set the countdown date
-   var days, hours, minutes, seconds; // variables for time units
-
-   var countdown = document.getElementById("tiles"); // get tag element
-
-   getCountdown();
-
-   setInterval(function () { getCountdown(); }, 1000);
-
-   function getCountdown(){
-
-     // find the amount of "seconds" between now and target
-     var current_date = new Date().getTime();
-     var seconds_left = (target_date - current_date) / 1000;
-
-     days = pad( parseInt(seconds_left / 86400) );
-     seconds_left = seconds_left % 86400;
-       
-     hours = pad( parseInt(seconds_left / 3600) );
-     seconds_left = seconds_left % 3600;
-         
-     minutes = pad( parseInt(seconds_left / 60) );
-     seconds = pad( parseInt( seconds_left % 60 ) );
-
-     // format countdown string + set tag value
-     countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
-   }
-
-   function pad(n) {
-     return (n < 10 ? '0' : '') + n;
-   }
-  </script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 </body>
 
