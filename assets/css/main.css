@@ -77,8 +77,8 @@ section {
 .section-header p {
   margin: 0;
   font-size: 48px;
-  font-weight: 400;
-  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-family: var(--font-default);
 }
 
 .section-header p span {
@@ -554,8 +554,14 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .about-img {
-  min-height: 500px;
+.about .about-img img {
+  width: -webkit-fill-available;
+}
+
+@media (max-width: 767px) {
+  .about .about-img img {
+    width: inherit;
+  }
 }
 
 .about h3 {
@@ -774,11 +780,18 @@ section {
 .stats-counter {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg.jpg") center center;
   background-size: cover;
+  padding: 70px 0;
+}
+
+.stats-counter-date-count {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg.jpg") center center;
+  background-size: cover;
   padding: 200px 0;
 }
 
 @media (min-width: 1365px) {
-  .stats-counter {
+  .stats-counter,
+  .stats-counter-date-count {
     background-attachment: fixed;
   }
 }
@@ -1476,7 +1489,7 @@ section {
   width: 100%;
   background-size: cover;
   position: relative;
-  min-height: 720px;
+  min-height: 760px;
   padding: 160px 0 60px 0;
 }
 
@@ -1563,7 +1576,7 @@ section {
 	background-image:    -moz-linear-gradient(top, #ffea97, #fdea9d, #ffeeaa, #fff2bc);
 	background-image:     -ms-linear-gradient(top, #ffea97, #fdea9d, #ffeeaa, #fff2bc);
 	background-image:      -o-linear-gradient(top, #ffea97, #fdea9d, #ffeeaa, #fff2bc);
-	border: 1px solid #111;
+	border: 1px solid #000000;
 	border-radius: 5px;
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
 	margin: auto;
@@ -1632,7 +1645,7 @@ section {
 	content:"";
 	width: 100%;
 	height: 13px;
-	background: #111;
+	background: #000000;
 	display: block;
 	padding: 0 3px;
 	position: absolute;
@@ -1640,7 +1653,7 @@ section {
 	z-index: -1;
 }
 
-#countdown #tiles > span:after{
+/* #countdown #tiles > span:after{
 	content:"";
 	width: 100%;
 	height: 1px;
@@ -1649,7 +1662,7 @@ section {
 	display: block;
 	position: absolute;
 	top: 48%; left: 0;
-}
+} */
 
 #countdown .labels{
 	width: 100%;
@@ -1797,6 +1810,16 @@ section {
 
 
 /* Home */
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .video-view {
   display: flex;
   justify-content: space-around;
@@ -2358,67 +2381,51 @@ display: none;
   width: 250px;
   height: 35px;
   border-radius: 10px;
-  background-color: #28a745;
+  background: linear-gradient(270deg, #f7de13, #f7d013, #f7d013, #f7b313, #f7b113, #f7a613, #f28919, #f27d19, #eb431d, #eb241d);
   padding: 8px;
   margin: 3px;
   font-size: smaller;
-  transition: 1s;
+  transition: all 1s;
 }
 
 .fixed-btn-2 {
   width: 250px;
   height: 35px;
   border-radius: 10px;
+  background: linear-gradient(270deg, #f7de13, #f7d013, #f7d013, #f7b313, #f7b113, #f7a613, #f28919, #f27d19, #eb431d, #eb241d);
   padding: 8px;
   margin: 3px;
   font-size: smaller;
-  transition: 1s;
-  text-shadow: none;
-  background: -webkit-linear-gradient(-45deg, rgba(230, 4, 4, 0.6) 25%, transparent 25%, transparent 50%, rgba(230, 4, 4, 0.6) 50%, rgba(230, 4, 4, 0.6) 75%, transparent 75%, transparent), -webkit-linear-gradient(top, #f92828, #e60404);
-  background: -moz-linear-gradient(-45deg, rgba(230, 4, 4, 0.6) 25%, transparent 25%, transparent 50%, rgba(230, 4, 4, 0.6) 50%, rgba(230, 4, 4, 0.6) 75%, transparent 75%, transparent), -moz-linear-gradient(top, #f92828, #e60404);
-  background: -ms-linear-gradient(-45deg, rgba(230, 4, 4, 0.6) 25%, transparent 25%, transparent 50%, rgba(230, 4, 4, 0.6) 50%, rgba(230, 4, 4, 0.6) 75%, transparent 75%, transparent), -ms-linear-gradient(top, #f92828, #e60404);
-  background: -o-linear-gradient(-45deg, rgba(230, 4, 4, 0.6) 25%, transparent 25%, transparent 50%, rgba(230, 4, 4, 0.6) 50%, rgba(230, 4, 4, 0.6) 75%, transparent 75%, transparent), -o-linear-gradient(top, #f92828, #e60404);
-  background: linear-gradient(-45deg, rgba(230, 4, 4, 0.6) 25%, transparent 25%, transparent 50%, rgba(230, 4, 4, 0.6) 50%, rgba(230, 4, 4, 0.6) 75%, transparent 75%, transparent), linear-gradient(top, #f92828, #e60404);
-  -pie-background: linear-gradient(-45deg, rgba(230, 4, 4, 0.6) 25%, transparent 25%, transparent 50%, rgba(230, 4, 4, 0.6) 50%, rgba(230, 4, 4, 0.6) 75%, transparent 75%, transparent), linear-gradient(top, #f92828, #e60404);
-  background-repeat: repeat;
-  -webkit-background-size: 40px 40px, 100% 100%;
-  -moz-background-size: 40px 40px, 100% 100%;
-  -ms-background-size: 40px 40px, 100% 100%;
-  -o-background-size: 40px 40px, 100% 100%;
-  background-size: 40px 40px, 100% 100%;
-  -webkit-animation: progress-bar-stripes 2s linear infinite;
-  -moz-animation: progress-bar-stripes 2s linear infinite;
-  -ms-animation: progress-bar-stripes 2s linear infinite;
-  -o-animation: progress-bar-stripes 2s linear infinite;
-  animation: progress-bar-stripes 2s linear infinite;
+  transition: all 1s;
 }
 
 .fixed-btn-3 {
   width: 250px;
   height: 35px;
   border-radius: 10px;
-  background-color: #28a745;
+  background: linear-gradient(270deg, #f7de13, #f7d013, #f7d013, #f7b313, #f7b113, #f7a613, #f28919, #f27d19, #eb431d, #eb241d);
   padding: 8px;
   margin: 3px;
   font-size: smaller;
-  transition: 1s;
+  transition: all 1s;
 }
 
 .fixed-btn-1 a,
 .fixed-btn-2 a,
 .fixed-btn-3 a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 
 .fixed-btn-1:hover,
 .fixed-btn-2:hover,
 .fixed-btn-3:hover {
-  background-color: var(--color-primary);
+  background: linear-gradient(270deg, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000);
+  padding: 8px;
   transform: scale(1.1);
 }
 
-.fixed-btn-2 {
+/* .fixed-btn-2 {
   text-shadow: none;
   background: -webkit-linear-gradient(-45deg, rgba(230, 4, 4, 0.6) 25%, transparent 25%, transparent 50%, rgba(230, 4, 4, 0.6) 50%, rgba(230, 4, 4, 0.6) 75%, transparent 75%, transparent), -webkit-linear-gradient(top, #f92828, #e60404);
   background: -moz-linear-gradient(-45deg, rgba(230, 4, 4, 0.6) 25%, transparent 25%, transparent 50%, rgba(230, 4, 4, 0.6) 50%, rgba(230, 4, 4, 0.6) 75%, transparent 75%, transparent), -moz-linear-gradient(top, #f92828, #e60404);
@@ -2437,7 +2444,7 @@ display: none;
   -ms-animation: progress-bar-stripes 2s linear infinite;
   -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
-}
+} */
 
 @-webkit-keyframes progress-bar-stripes {
 from { background-position: 0 0; }
