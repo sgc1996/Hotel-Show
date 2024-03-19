@@ -2516,9 +2516,10 @@ display: none;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  z-index: 10000;
+  z-index: 1;
   top: 100px; /* adjust as needed */
   right: 20px; /* adjust as needed */
+  transition-delay: 2s;
 }
 
 .fixed-btn-1 {
