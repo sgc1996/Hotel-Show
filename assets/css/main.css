@@ -310,7 +310,7 @@ section {
 
   .navbar>ul>li {
     white-space: nowrap;
-    padding: 10px 0 10px 25px;
+    padding: 10px 0 10px 20px;
   }
 
   .navbar a,
@@ -320,7 +320,7 @@ section {
     justify-content: space-between;
     padding: 0 3px;
     font-family: var(--font-secondary);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     color: #7f7f90;
     white-space: nowrap;
@@ -1170,6 +1170,105 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Press Coverage Section
+--------------------------------------------------------------*/
+.press-coverage .coverage-box {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
+  transition: 0.3s;
+}
+
+.press-coverage .coverage-box .coverage-img {
+  position: relative;
+  overflow: hidden;
+}
+
+/* .press-coverage .coverage-box .coverage-img:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/team-shape.svg) no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
+} */
+
+/* .press-coverage .coverage-box .social {
+  position: absolute;
+  right: -100%;
+  top: 30px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+} */
+
+/* .press-coverage .coverage-box .social a {
+  transition: color 0.3s;
+  color: rgba(55, 55, 63, 0.4);
+  margin: 15px 12px;
+  display: block;
+  line-height: 0;
+  text-align: center;
+} */
+
+/* .press-coverage .coverage-box .social a:hover {
+  color: rgba(55, 55, 63, 0.9);
+} */
+
+/* .press-coverage .coverage-box .social i {
+  font-size: 18px;
+} */
+
+.press-coverage .coverage-box .member-info {
+  padding: 25px 15px 20px 15px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.press-coverage .coverage-box .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--color-secondary);
+}
+
+.press-coverage .coverage-box .member-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.press-coverage .coverage-box .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: rgba(33, 37, 41, 0.7);
+}
+
+.member-info a {
+  color: var(--color-primary);
+}
+
+.member-info a:hover {
+  color: rgba(206, 18, 18, 0.8);
+}
+
+.press-coverage .coverage-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
+}
+
+/*--------------------------------------------------------------
 # Book A Table Section
 --------------------------------------------------------------*/
 .book-a-table .reservation-img {
@@ -1371,7 +1470,9 @@ section {
   padding: 0;
   margin: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 .contact .info-item .social-links a {
@@ -2506,8 +2607,6 @@ display: none;
 
 /* End footer */
 
-
-/*  */
   /* Fixed Btn
 --------------------------------*/
 /* for desktop */
@@ -2523,13 +2622,15 @@ display: none;
 }
 
 .fixed-btn-1 {
-  width: 250px;
+  width: 150px;
   height: 35px;
   border-radius: 10px;
   background: linear-gradient(270deg, #f7de13, #f7d013, #f7d013, #f7b313, #f7b113, #f7a613, #f28919, #f27d19, #eb431d, #eb241d);
   padding: 8px;
   margin: 3px;
+  text-align: center;
   font-size: smaller;
+  font-weight: 600;
   transition: all 1s;
 }
 
@@ -2591,7 +2692,7 @@ display: none;
   animation: progress-bar-stripes 2s linear infinite;
 } */
 
-@-webkit-keyframes progress-bar-stripes {
+/* @-webkit-keyframes progress-bar-stripes {
 from { background-position: 0 0; }
 to { background-position: 40px 0; }
 }
@@ -2604,7 +2705,117 @@ to { background-position: 40px 0; }
 @keyframes progress-bar-stripes {
 from { background-position: 0 0; }
 to { background-position: 40px 0; }
+} */
+
+/* End Fixed Btn */
+
+/* Fixed Social media Btn */
+
+.social-media-fixed {
+  right: 0px;
+  top: 150px;
+  line-height: 32px;
 }
+
+.a2a_kit, .a2a_menu, .a2a_modal, .a2a_overlay {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  outline: 0;
+  right: 0px;
+  top: 150px;
+  line-height: 32px;
+}
+
+.a2a_floating_style, .a2a_overlay_style {
+  animation: a2aFadeIn .2s ease-in;
+  padding: 4px;
+}
+
+.a2a_s_facebook {
+  background-color: rgb(8, 102, 255);
+}
+
+.a2a_s_instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.a2a_s_pinterest {
+  background-color: rgb(230, 0, 35);
+}
+
+.a2a_floating_style {
+  background-color: #fff;
+  border-radius: 6px;
+  position: fixed;
+  z-index: 9999995;
+}
+
+.a2a_vertical_style:not(.a2a_flex_style) a {
+  clear: left;
+  display: block;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.a2a_kit a {
+  cursor: pointer;
+  transition: none;
+}
+
+.a2a_color_buttons a, .a2a_floating_style a {
+  text-decoration: none;
+}
+
+.a2a_default_style .a2a_count, .a2a_default_style .a2a_svg, .a2a_floating_style .a2a_svg, .a2a_menu .a2a_svg, .a2a_vertical_style .a2a_count, .a2a_vertical_style .a2a_svg {
+  border-radius: 4px;
+}
+
+.a2a_kit .a2a_svg {
+  background-repeat: repeat;
+}
+
+.a2a_svg {
+  background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  pointer-events: none;
+  width: 32px;
+}
+
+.a2a_svg svg {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  top: 0;
+  width: auto;
+  height: auto;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.a2a_label {
+  position: absolute !important;
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+}
+
+/* End Fixed Social media Btn */
 
 /* Exhibitor Profile */
 .exhibitor-sector {
