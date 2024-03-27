@@ -2741,8 +2741,8 @@ to { background-position: 40px 0; }
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
-.a2a_s_pinterest {
-  background-color: rgb(230, 0, 35);
+.a2a_s_linkedin {
+  background-color: #0A66C2;
 }
 
 .a2a_floating_style {
@@ -2832,3 +2832,107 @@ svg:not(:root) {
 .sector-1 {
   min-width: 310px;
 }
+
+/* Application Btn */
+
+.application {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.application i {
+  margin-right: 5px;
+}
+
+.appl-btn {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  display: block;
+  width: 250px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+
+.appl-btn:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.2);
+  display: block;
+  width: 250px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+/* End Application Btn*/
+
+/* official travel partner */
+
+.icon-place i {
+  left: -15px;
+}
+
+/* end official travel partner */
+.travel-partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  position: relative;
+}
+
+.contact-box div {
+  margin-left: 70px;
+}
+
+.icon-position {
+  position: absolute;
+}
+
+@media (max-width: 991px) {
+  .travel-partner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* .content-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.contact-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-area ul {
+  list-style: none;
+}
+
+.contact-area ul li {
+  list-style: none;
+  padding: 0 0 25px 0;
+  position: relative;
+}
+
+.contact-area ul li i{
+  list-style: none;
+  padding: 0 0 25px 0;
+  position:  absolute;
+}
+
+.company-logo img {
+  max-width: 100%;
+  height: auto;
+} */
