@@ -1954,6 +1954,10 @@ section {
   inherits: false;
 }
 
+.hero-content-box {
+  margin-top: -160px;
+}
+
 .hero-content h1{
   font-size: 4rem;
   height: 30%;
@@ -1977,13 +1981,6 @@ section {
   }
 }
 
-.hero-content .slogan span{
-  color: #ffffff;
-  font-size: 2.4rem;
-  font-weight: 500;
-  letter-spacing: 0px;
-}
-
 .hero-content p span{
   color: #ffffff;
   font-size: 2.4rem;
@@ -1994,7 +1991,14 @@ section {
 .hero-content p {
   font-size: 2rem;
   color: #f0f0f0;
-  margin-top: 50px;
+}
+
+.hero-content .slogan span{
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0px;
+  margin-top: 0px;
 }
 
 .hero-content .other-pages {
@@ -2082,7 +2086,7 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .hero-content {
+  .hero-content-box {
     margin-top: -120px;
   }
 
@@ -2121,7 +2125,7 @@ section {
 }
 
 @media screen and (max-width: 475px) {
-  .hero-content {
+  .hero-content-box {
     margin-top: -250px;
   }
 
