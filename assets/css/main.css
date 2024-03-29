@@ -2046,7 +2046,7 @@ section {
   .hero-content h1{
     font-size: 3rem;
     font-weight: 800;
-    line-height: 40px;
+    line-height: 45px;
     height: 30%;
   }
 
@@ -2116,11 +2116,15 @@ section {
 }
 
 @media screen and (max-width: 475px) {
+  .hero-content {
+    margin-top: -150px;
+  }
+
   .hero-content h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 30px;
-    height: 10%;
+    height: 30%;
   }
 
   .hero-content h1 span{
