@@ -3038,6 +3038,11 @@ to { background-position: 40px 0; }
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
+.a2a_s_instagram svg {
+  left: 4px;
+  top: 4px;
+}
+
 .a2a_s_linkedin {
   background-color: #0A66C2;
 }
@@ -3084,17 +3089,36 @@ to { background-position: 40px 0; }
   width: 32px;
 }
 
+@media (max-width: 475px) {
+  .a2a_svg {
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 20px;
+  }
+
+  .a2a_floating_style, .a2a_overlay_style {
+    padding: 1px;
+  }
+
+  .a2a_vertical_style:not(.a2a_flex_style) a {
+    padding: 2px;
+  }
+
+  .a2a_s_instagram svg {
+    left: 3px;
+    top: 3px;
+  }
+}
+
 .a2a_svg svg {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
   display: block;
-  left: 0;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
   position: relative;
-  top: 0;
   width: auto;
   height: auto;
 }
