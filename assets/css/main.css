@@ -2117,26 +2117,26 @@ section {
 
 @media screen and (max-width: 475px) {
   .hero-content {
-    margin-top: -150px;
+    margin-top: -250px;
   }
 
   .hero-content h1{
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 800;
-    line-height: 30px;
+    line-height: 40px;
     height: 30%;
   }
 
   .hero-content h1 span{
     color: #ffffff;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0px;
     line-height: normal;
   }
 
   .hero-content p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #f0f0f0;
     margin-top: 50px;
   }
@@ -2149,7 +2149,7 @@ section {
 
   .hero-content p span{
     color: #ffffff;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 1.2px;
   }
@@ -3047,6 +3047,11 @@ to { background-position: 40px 0; }
   background-color: #0A66C2;
 }
 
+.a2a_s_linkedin svg {
+  left: 4px;
+  top: 4px;
+}
+
 .a2a_floating_style {
   background-color: #fff;
   border-radius: 6px;
@@ -3092,12 +3097,12 @@ to { background-position: 40px 0; }
 @media (max-width: 475px) {
   .a2a_svg {
     background-repeat: no-repeat;
-    height: 22px;
-    width: 20px;
+    height: 23px;
+    width: 21px;
   }
 
   .a2a_floating_style, .a2a_overlay_style {
-    padding: 1px;
+    padding: 2px;
   }
 
   .a2a_vertical_style:not(.a2a_flex_style) a {
@@ -3106,7 +3111,17 @@ to { background-position: 40px 0; }
 
   .a2a_s_instagram svg {
     left: 3px;
-    top: 3px;
+    top: 3.5px;
+  }
+
+  .a2a_s_facebook svg {
+    left: 0px;
+    top: 1px;
+  }
+
+  .a2a_s_linkedin svg {
+    left: 2.5px;
+    top: 2px;
   }
 }
 
