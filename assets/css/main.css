@@ -81,6 +81,24 @@ section {
   font-family: var(--font-default);
 }
 
+@media screen and (max-width: 767px) {
+  .section-header p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--font-default);
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .section-header p {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--font-default);
+  }
+}
+
 .section-header p span {
   color: var(--color-primary);
 }
