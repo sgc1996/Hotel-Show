@@ -326,9 +326,14 @@ section {
     position: relative;
   }
 
-  .dropdown-nav {
+  /* .dropdown-nav {
     cursor: pointer;
-  }
+    color: #7f7f90;
+  } */
+
+  /* .dropdown-nav ul li a:focus {
+    color: #000000;
+  } */
 
   .navbar>ul>li {
     white-space: nowrap;
@@ -344,7 +349,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 13px;
     font-weight: 600;
-    color: #7f7f90;
+    color: #000000;
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
