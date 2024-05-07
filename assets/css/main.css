@@ -326,6 +326,10 @@ section {
     position: relative;
   }
 
+  .dropdown-nav {
+    cursor: pointer;
+  }
+
   .navbar>ul>li {
     white-space: nowrap;
     padding: 10px 0 10px 20px;
@@ -1608,7 +1612,7 @@ section {
   width: 100%;
   background-size: cover;
   position: relative;
-  min-height: 760px;
+  min-height: 772px;
   padding: 160px 0 60px 0;
 }
 
