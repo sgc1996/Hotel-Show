@@ -95,7 +95,7 @@ if ($conn->query($sql) === TRUE) {
         </p>
 
         <p>
-            Please keep this information for your records. If you have any questions or need further assistance, feel free to contact our support team at <b>chsga@sltnet.lk</b>.
+            Please keep this information for your records. If you have any questions or need further assistance, feel free to contact our support team at <b>event@hotelshowcolombo.com</b>.
         </p>
 
         <p class="footer">
