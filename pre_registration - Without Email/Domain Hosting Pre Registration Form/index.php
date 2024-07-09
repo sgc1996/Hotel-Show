@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hotel Show 2024</title>
+    <title>Hotel Show Colombo 2024</title>
     <!--<title>Registration Form in HTML CSS</title>-->
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -26,7 +26,7 @@
     
     <section class="container" style="--bs-gutter-x: 3.8rem; background-color: #ffffffe8; max-width:900px">
     <div class="agile-voltsub">
-        <img src="img/hotel_show_logo.png" style="width: 300px" alt="Hotel Show 2024"><br><br>
+        <img src="img/hotel_show_logo.png" style="width: 300px" alt="Hotel Show Colombo 2024"><br><br>
         <h2>PRE REGISTRATION FORM</h2>
     </div><br>
 
@@ -613,7 +613,6 @@
           </div>
         </div>
       </div>
-
       </form>
     </section>
     <script>
