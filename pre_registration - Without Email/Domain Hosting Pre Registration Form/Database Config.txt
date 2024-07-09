@@ -1,0 +1,6 @@
+Database Name: hypervoi_hotel_show
+Username: hypervoi_pre_registration
+Password: i42K_r!mqk#Y
+Table Name: pre_registration
+
+https://www.hotelshowcolombo.com/pre_registration/view_data/viewdata.php
