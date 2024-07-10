@@ -98,23 +98,22 @@ if ($conn->query($sql) === TRUE) {
         $mail->isSMTP();
         $mail->Host = 'mail.hotelshowcolombo.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'pre.registration@hotelshowcolombo.com';
-        $mail->Password = '7sdcyy_agHqV';
+        $mail->Username = 'events@hotelshowcolombo.com';
+        $mail->Password = 'Ishan@3214';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
         //Recipients
         $mail->setFrom('event@hotelshowcolombo.com', 'Hotel Show Colombo 2024');
         $mail->addAddress($data['email'], $data['fullName']);
-        // $mail->addCC('event@hotelshowcolombo.com', 'Hotel Show Colombo 2024');
-        // $mail->addCC('rizwan@cdcevents.net', 'Rizwan Khan');
-        //$mail->addBCC('ameshm@aitech.lk', 'Hotel Show Colombo 2024');
-        $mail->addCC('gayanchathuranga1992@gmail.com', 'Hotel Show Colombo 2024');
-        // $mail->addBCC('gayanchathuranga1992@gmail.com', 'Hotel Show Colombo 2024');
+        $mail->addCC('event@hotelshowcolombo.com', 'Hotel Show Colombo 2024');
+        $mail->addBCC('ameshm@aitech.lk', 'Hotel Show Colombo 2024');
+        //$mail->addCC('gayanchathuranga1992@gmail.com', 'Hotel Show Colombo 2024');
+        $mail->addBCC('gayanchathuranga1992@gmail.com', 'Hotel Show Colombo 2024');
 
         //Content
         $mail->isHTML(true);
-        $mail->Subject = 'Hotel Show Colombo 2024 - APPLICATION - ' . $data['fullName'];
+        $mail->Subject = 'Hotel Show Colombo 2024 - BUYER REGISTRATION - ' . $data['fullName'];
         $emailBody = '<!DOCTYPE html>
             <html lang="en">
             <head>
@@ -171,7 +170,7 @@ if ($conn->query($sql) === TRUE) {
             </head>
             <body>
             <div class="container">
-                <img src="https://lh3.googleusercontent.com/pw/AP1GczO3OLhVWGzt1B0Tud_q6lZzc-2fFg0YAlflsJwQ9wJbI4p-fMULZxnCWXyB8rzJoKavvyLkvIbjQIgNzFyDvd5gkGjNrdymALjfyO8D0vI1IVNKHzh0If-YsBz_0lUvwaParfWSkurdqt5YKcW7JO9Tn_5SdiCeL5LbPc3NEpbnCHPTSezWRyUsZC7PocworS0upxd1aTkZhwGeEHd3yHOoJx8BhOd-lfWIQF6TY6kXjVNEsTPn3YySpIkktHKLLwA_OxcR0dJvBJi4b32Nj03dro3gnV-g34hhgbeefvlZdEUFymrdeWbbTrMfKx5HLf4BMbULgvM67VxVWsNoSbNlk-L6BYr4arXPwJYRqSGSeu9SE5JRCOMvn1A9-AQ8JteWO8t1i1TU44SgekyqAPfw0iuRFzvbNWYEBJN3YSApD76DMXMSWI80wchT5Irz9SNVqsEnNVS9zTp8Z9sGhCjDoQOFucJBVmXmomLazzcyr9aLUtHRTheRO6L9EA1AQlZUPQVc6_XuCwaMt8ikWMS4J4vLgiDstt6Uq7mdH-7aMkCjncG0W0R8acVjaMReoLm-tu2pavwUU6s1C-3DqPa0I-sLazL-KHhBg3VNxYs3DYq7jUDb3W9XTMHeGNzv5D75z39-asvxQaaYUH1qo6CeBFmgnkkZNnABsc8MzyL0ENQrdF1RDVChGzv4Ls0z99Gbvl5qUYLxx7Rnn3S9Hhd4JD5BkNM0g5zH-PR0TuhDP1tqa5K7K0VOUfBV_BViOmHodSHFgpp-_GSFV35FiBTPQk0Yj8v0qG8BhuxRWbZL0jZeIPeGz8Y0FpPE2tvwD9BjZzGv8838Emc-eHGrToS3ymnQ3DAHxk43wR4JshpPhO3tWVb6IiA3g1f_8O6QgtnMMehRtvDHIGuCEA8q3EE=w300-h161-s-no-gm?authuser=0" alt="Hotel Show Colombo 2024">
+                <img src="http://www.hotelshowcolombo.com/assets/img/logo.png" alt="Hotel Show Colombo 2024">
                 <h2>Hotel Show Colombo 2024 - Registration Completed Successfully</h2>
                 <p>Dear <b>' . $data['fullName'] . ',</b></p>
                 <p><b>Your registered email id is : ' . $data['email'] . '</b></p>
